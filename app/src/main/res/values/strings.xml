@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UFFF</string>
+    <string name="botany">Ботаника</string>
+    <string name="dendrology">Ботаника высших (дендрология)</string>
+    <string name="flowers">Ботаника цветов (первоцветы и не только)</string>
+    <string name="zoology">Зоология</string>
+    <string name="vertebrate">Зоология позвоночных</string>
+    <string name="invertebrate">Зоология беспозвоночных</string>
+    <string name="birds">Птицы</string>
+    <string name="fish">Рыбы</string>
+    <string name="water">Водные</string>
+    <string name="ground">Наземные</string>
+    <string name="about_title">О программе</string>
+    <string name="about_text">
+        Made by <b>JustNeedCoffee</b> \n
+        Версия: alpha v0.1 \n
+        Все пожелания присылать в Telegram @JustNeedCoffee с пометкой \"UFFF\"
+    </string>
+    <string name="answer_type">Что это? Введите ответ на русском или латыни</string>
+    <string name="answer_send">Отправить</string>
+</resources>
