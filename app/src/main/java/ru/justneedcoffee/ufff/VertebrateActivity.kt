@@ -26,7 +26,8 @@ class VertebrateActivity : ComponentActivity() {
         btnFish.setOnClickListener {
             val intent = Intent(this@VertebrateActivity, ListActivity::class.java)
             intent.putExtra("TYPE", "fish")
-            intent.putExtra("QUANTITY", resources.getStringArray(R.array.fish_images).size)
+            // TODO: replace birds to fish
+            intent.putExtra("QUANTITY", resources.getStringArray(R.array.birds_images).size)
             startActivity(intent)
         }
     }
