@@ -29,11 +29,5 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this@MainActivity, ZoologyActivity::class.java)
             startActivity(intent)
         }
-
-        val btnTest : Button = findViewById(R.id.btnTest)
-        btnTest.setOnClickListener {
-            val intent = Intent(this@MainActivity, QuizActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

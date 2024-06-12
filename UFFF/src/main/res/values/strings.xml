@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">UFFF</string>
+    <string name="app_name_full">
+        <b>Universal FEFU Flora &amp; Fauna</b> \n
+        v0.1.1
+    </string>
     <string name="botany">Ботаника</string>
     <string name="dendrology">Ботаника высших (дендрология)</string>
     <string name="flowers">Ботаника цветов (первоцветы и не только)</string>
@@ -13,8 +17,7 @@
     <string name="about_title">О программе</string>
     <string name="about_text">
         Made by <b>JustNeedCoffee</b> \n
-        Версия: alpha v0.1 \n
-        Все пожелания присылать в Telegram @JustNeedCoffee с пометкой \"UFFF\"
+        Следите за обновлениями в ТГ-канале: <b>@UniversalFFF</b>
     </string>
     <string name="answer_type">Что это? Введите ответ на русском или латыни</string>
     <string name="answer_send">Отправить</string>
