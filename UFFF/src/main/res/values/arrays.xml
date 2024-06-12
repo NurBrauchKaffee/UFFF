@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Birds -->
+    <string-array name="birds_images">
+        <item>birds_1</item>
+        <item>birds_2</item>
+        <item>birds_3</item>
+        <item>birds_4</item>
+        <item>birds_5</item>
+        <item>birds_6</item>
+        <item>birds_7</item>
+        <item>birds_8</item>
+        <item>birds_9</item>
+        <item>birds_10</item>
+    </string-array>
+    <string-array name="birds_russian">
+        <item>Сорока</item>
+        <item>Чомга</item>
+        <item>Большой баклан</item>
+        <item>Чернохвостая чайка</item>
+        <item>Белоспинный дятел</item>
+        <item>Рыжепоясничная ласточка</item>
+        <item>Камчатская трясогузка</item>
+        <item>Свиристель</item>
+        <item>Сойка</item>
+        <item>Канадский поползень</item>
+    </string-array>
+    <string-array name="birds_latin">
+        <item>Pica pica</item>
+        <item>Podiceps cristatu</item>
+        <item>Phalacrocorax carbo</item>
+        <item>Larus crassirostris</item>
+        <item>Dendrocopos leucoto</item>
+        <item>Cecropis daurica</item>
+        <item>Motacilla lugens</item>
+        <item>Bombycilla garrulus</item>
+        <item>Garrulus glandarius</item>
+        <item>Sitta canadensis</item>
+    </string-array>
+
+    <!-- Fish -->
+    <string-array name="fish_images">
+        <item>fish_1</item>
+        <item>fish_2</item>
+        <item>fish_3</item>
+        <item>fish_4</item>
+        <item>fish_5</item>
+        <item>fish_6</item>
+        <item>fish_7</item>
+        <item>fish_8</item>
+        <item>fish_9</item>
+        <item>fish_10</item>
+    </string-array>
+    <string-array name="fish_russian">
+        <item>Горбуша</item>
+        <item>Кета</item>
+        <item>Голец</item>
+        <item>Хариус</item>
+        <item>Амурский язь</item>
+        <item>Чавыча</item>
+        <item>Китайский окунь</item>
+        <item>Зубастая корюшка</item>
+        <item>Белый голец</item>
+        <item>Амурский сом</item>
+    </string-array>
+    <string-array name="fish_latin">
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+        <item>NO_LATIN_NAME</item>
+    </string-array>
+
+    <!-- Dendrology -->
+    <string-array name="dendro_images">
+        <item>dendro_1</item>
+        <item>dendro_2</item>
+        <item>dendro_3</item>
+        <item>dendro_4</item>
+        <item>dendro_5</item>
+        <item>dendro_6</item>
+        <item>dendro_7</item>
+        <item>dendro_8</item>
+        <item>dendro_9</item>
+        <item>dendro_10</item>
+    </string-array>
+    <string-array name="dendro_russian">
+        <item>Бархат амурский</item>
+        <item>Береза маньчжурская</item>
+        <item>Боярышник Максимовича</item>
+        <item>Вишня сахалинская</item>
+        <item>Вяз горный</item>
+        <item>Град сердцелистный</item>
+        <item>Ива белая</item>
+        <item>Клен мелколистный</item>
+        <item>Лиственница даурская</item>
+        <item>Магнолия снизу-белая</item>
+    </string-array>
+    <string-array name="dendro_latin">
+        <item>Phellodendron amurense</item>
+        <item>Betula mandshurica</item>
+        <item>Crataegus maximowiczii</item>
+        <item>Cerasus sachalinensis</item>
+        <item>Ulmus laciniata</item>
+        <item>Carpinus cordata</item>
+        <item>Salix alba</item>
+        <item>Acer mono</item>
+        <item>Larix gmelinii</item>
+        <item>Magnolia obovata</item>
+    </string-array>
+
+    <!-- Flowers -->
+    <string-array name="flowers_images">
+        <item>flowers_1</item>
+        <item>flowers_2</item>
+        <item>flowers_3</item>
+        <item>flowers_4</item>
+        <item>flowers_5</item>
+        <item>flowers_6</item>
+        <item>flowers_7</item>
+        <item>flowers_8</item>
+        <item>flowers_9</item>
+        <item>flowers_10</item>
+    </string-array>
+    <string-array name="flowers_russian">
+        <item>Хохлатка сомнительная</item>
+        <item>Лютик уссурийский</item>
+        <item>Гусиный лук Накаи</item>
+        <item>Адонис амурский</item>
+        <item>Калужница лесная</item>
+        <item>Селезеночник волосистый</item>
+        <item>Лесной мак весенний</item>
+        <item>Купальница китайская</item>
+        <item>Водосбор острочашелистниковый</item>
+        <item>Ирис остролепестковый</item>
+    </string-array>
+    <string-array name="flowers_latin">
+        <item>Corydalis ambigua</item>
+        <item>Ranunculus ussuriensis</item>
+        <item>Gagea nakaiana</item>
+        <item>Adonis amurensis</item>
+        <item>Caltha sylvestris</item>
+        <item>Chrysosplenium pilosum</item>
+        <item>Hylomecon vernalis</item>
+        <item>Trollius chinensis</item>
+        <item>Aquiligia oxysepala</item>
+        <item>Iris oxypetala</item>
+    </string-array>
+
+    <!-- Water -->
+    <string-array name="water_images">
+        <item>water_1</item>
+        <item>water_2</item>
+        <item>water_3</item>
+        <item>water_4</item>
+        <item>water_5</item>
+    </string-array>
+    <string-array name="water_russian">
+        <item>Патирия гребешковая</item>
+        <item>Японский гребешок</item>
+        <item>Обыкновенная амурская звезда</item>
+        <item>Обыкновенный прибрежный краб</item>
+        <item>Солен</item>
+    </string-array>
+    <string-array name="water_latin">
+        <item>Patiria pectinifera</item>
+        <item>Chlamys nipponensisi</item>
+        <item>Asterias amurensis</item>
+        <item>Hemigrapsus sanguineus</item>
+        <item>Solen krusenstеrni</item>
+    </string-array>
+
+    <!-- Ground -->
+    <string-array name="ground_images">
+        <item>ground_1</item>
+        <item>ground_2</item>
+        <item>ground_3</item>
+        <item>ground_4</item>
+        <item>ground_5</item>
+        <item>ground_6</item>
+        <item>ground_7</item>
+        <item>ground_8</item>
+        <item>ground_9</item>
+        <item>ground_10</item>
+    </string-array>
+    <string-array name="ground_russian">
+        <item>Голубянка аргиадес</item>
+        <item>Голубой усач</item>
+        <item>Переливница Шренка</item>
+        <item>Жужелица узкогрудая</item>
+        <item>Аполлон Бремера</item>
+        <item>Ленточница желтая</item>
+        <item>Носса уссурийская</item>
+        <item>Крестовики</item>
+        <item>Дровосек реликтовый</item>
+        <item>Пестрянка</item>
+    </string-array>
+    <string-array name="ground_latin">
+        <item>Everes argiades</item>
+        <item>Rosalia coelestis</item>
+        <item>Schrenkri</item>
+        <item>Carabus constricticollis</item>
+        <item>Parnassius bremeri</item>
+        <item>Limenitis thisbe</item>
+        <item>Nossa palaearctica</item>
+        <item>Araneus</item>
+        <item>Callipogon relictus</item>
+        <item>Zygaena niphona</item>
+    </string-array>
+</resources>

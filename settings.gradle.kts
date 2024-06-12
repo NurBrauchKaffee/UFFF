@@ -20,4 +20,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "UFFF"
-include(":app")
+include(":UFFF")

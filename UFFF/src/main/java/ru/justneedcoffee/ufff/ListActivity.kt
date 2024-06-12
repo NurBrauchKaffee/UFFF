@@ -1,7 +1,5 @@
 package ru.justneedcoffee.ufff
 
-import android.content.Intent
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -11,7 +9,11 @@ import androidx.activity.ComponentActivity
 class ListActivity : ComponentActivity() {
     private val types = mapOf(
         "birds" to "Птица",
-        "fish" to "Рыба"
+        "fish" to "Рыба",
+        "dendro" to "Дерево",
+        "flowers" to "Цветок",
+        "water" to "Водное",
+        "ground" to "Наземное"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

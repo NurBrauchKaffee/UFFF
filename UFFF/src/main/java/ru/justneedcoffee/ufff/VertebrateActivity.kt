@@ -1,11 +1,8 @@
 package ru.justneedcoffee.ufff
 
 import android.content.Intent
-import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.view.Gravity
 import android.widget.Button
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 
 class VertebrateActivity : ComponentActivity() {
@@ -26,8 +23,7 @@ class VertebrateActivity : ComponentActivity() {
         btnFish.setOnClickListener {
             val intent = Intent(this@VertebrateActivity, ListActivity::class.java)
             intent.putExtra("TYPE", "fish")
-            // TODO: replace birds to fish
-            intent.putExtra("QUANTITY", resources.getStringArray(R.array.birds_images).size)
+            intent.putExtra("QUANTITY", resources.getStringArray(R.array.fish_images).size)
             startActivity(intent)
         }
     }
