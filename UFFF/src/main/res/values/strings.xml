@@ -2,7 +2,7 @@
     <string name="app_name">UFFF</string>
     <string name="app_name_full">
         <b>Universal FEFU Flora &amp; Fauna</b> \n
-        v0.1.1
+        v0.2.0
     </string>
     <string name="botany">Ботаника</string>
     <string name="dendrology">Ботаника высших (дендрология)</string>
@@ -21,4 +21,9 @@
     </string>
     <string name="answer_type">Что это? Введите ответ на русском или латыни</string>
     <string name="answer_send">Отправить</string>
+    <string name="clear_progress">Очистить прогресс</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="app_icon_desc">App icon</string>
 </resources>

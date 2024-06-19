@@ -2,9 +2,9 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="Desktop.UFFF.UFFF">
+      <SelectionState runConfigName="UFFF">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-06-12T21:27:37.566196700Z">
+        <DropdownSelection timestamp="2024-06-17T21:17:13.812116840Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="PhysicalDevice" identifier="serial=RF8N70E2V1E" />

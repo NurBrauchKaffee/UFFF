@@ -1,6 +1,10 @@
 package ru.justneedcoffee.ufff
 
+import android.annotation.SuppressLint
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
+import android.text.Html
 import android.view.Gravity
 import android.view.KeyEvent
 import android.view.View
@@ -11,6 +15,7 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.google.android.material.textfield.TextInputEditText
 
+private lateinit var prefs: SharedPreferences
 
 class QuizActivity : ComponentActivity() {
     private val map = mapOf (
@@ -21,6 +26,10 @@ class QuizActivity : ComponentActivity() {
         "water" to Triple(R.array.water_images, R.array.water_russian, R.array.water_latin),
         "ground" to Triple(R.array.ground_images, R.array.ground_russian, R.array.ground_latin)
     )
+
+    private lateinit var type : String
+    private var position : Int = 0
+    private var counter : Int = 0
 
     private fun isCorrectAnswer(answer: String, expectedAnswer: String) : Boolean {
         return answer.equals(expectedAnswer, ignoreCase = true)
@@ -35,18 +44,51 @@ class QuizActivity : ComponentActivity() {
         val ans = typedText.trim()
         val duration = Toast.LENGTH_SHORT
 
-        val text : String = if (isCorrectAnswer(ans, latinAnswer)
-            || isCorrectAnswer(ans, russianAnswer)) {
-            "Да, это $ans"
+        var text : String
+        var correct : Int
+
+        prefs = getSharedPreferences(type, Context.MODE_PRIVATE)
+        val editor = prefs.edit()
+
+        if (isCorrectAnswer(ans, latinAnswer) || isCorrectAnswer(ans, russianAnswer)) {
+            text = "Да, это $ans"
+            correct = 1
+            editor.putInt(position.toString(), 1).apply()
+        } else if (ans.isEmpty()) {
+            text = "Пустой ответ не принимается"
+            correct = 0
+            if (prefs.getInt(position.toString(), 0) != 1) {
+                editor.putInt(position.toString(), 0).apply()
+            }
         } else {
-            "Нет, это не $ans"
+            text = "Нет, это не $ans"
+            counter++
+            correct = -1
+            if (prefs.getInt(position.toString(), 0) != 1) {
+                editor.putInt(position.toString(), -1).apply()
+            }
         }
 
-        val toast = Toast.makeText(applicationContext, text, duration)
+        if (counter == 3) {
+            text = "Очень жаль, вы проиграли. Правильный ответ: $russianAnswer " + if (type != "fish") {
+                "или же <i>$latinAnswer</i>"
+            } else {
+                ""
+            }
+            correct = 1
+        }
+
+        val toast = Toast.makeText(applicationContext, Html.fromHtml(text,
+            Html.FROM_HTML_MODE_LEGACY), duration)
         toast.setGravity(Gravity.CENTER, 0, 0)
         toast.show()
+
+        if (correct == 1 || correct == 0) {
+            finish()
+        }
     }
 
+    @SuppressLint("DiscouragedApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -54,8 +96,8 @@ class QuizActivity : ComponentActivity() {
 
         val img : ImageView = findViewById(R.id.img)
 
-        val type = intent.getStringExtra("TYPE")
-        val position = intent.getIntExtra("POSITION", 0)
+        type = intent.getStringExtra("TYPE").toString()
+        position = intent.getIntExtra("POSITION", 0)
 
         val image = resources.getIdentifier(resources.getStringArray(map[type]!!.first)[position],
             "drawable", packageName)
@@ -69,9 +111,8 @@ class QuizActivity : ComponentActivity() {
             override fun onKey(v: View?, keyCode: Int, event: KeyEvent): Boolean {
                 if (event.action == KeyEvent.ACTION_DOWN &&
                     keyCode == KeyEvent.KEYCODE_ENTER) {
-
                     typeAnswer.clearFocus()
-                    typeAnswer.isCursorVisible = false
+//                    typeAnswer.isCursorVisible = false
                     onTypedText(v, typeAnswer.text.toString(), russianAnswer, latinAnswer)
 
                     return true

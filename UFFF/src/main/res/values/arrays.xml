@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Birds -->
     <string-array name="birds_images">
-        <item>birds_1</item>
+        <item tools:ignore="Typos">birds_1</item>
         <item>birds_2</item>
         <item>birds_3</item>
         <item>birds_4</item>
